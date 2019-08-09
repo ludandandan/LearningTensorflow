@@ -45,6 +45,7 @@ sess = tf.Session()
 
 merged = tf.compat.v1.summary.merge_all()
 writer = tf.compat.v1.summary.FileWriter('logs/', sess.graph)
+# tensorboard --logdir='logs/'
 
 sess.run(init)
 
